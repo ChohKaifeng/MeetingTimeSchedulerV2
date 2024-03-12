@@ -75,7 +75,8 @@ Desired outcome:
 * 1100000010, 1100000011, 1100000012 and 1100000013 will be available
 * Meeting time is 0800 (480) to 1000 (600)
 
-Outcome: 
+Outcome:
+
 ![image](https://github.com/ChohKaifeng/MeetingTimeSchedulerV2/assets/64060097/a0809e0f-278e-4ca2-a009-c605cc751c37)
 
 #### Test Case 2: Passed ✅
@@ -85,11 +86,12 @@ Scenario:
 * 1100000010, 1100000011, 1100000012 and 1100000013 are available from 0800 to 1200.
 * Meeting is 2 hours long & must be held between 0800 to 1200.
 
-Outcome: 
+Desired outcome: 
 * 1100000008, 1100000010, 1100000011, 1100000012 and 1100000013 will be available
 * Meeting time is 1000 (600) to 1200 (720)
 
 Outcome: 
+
 ![image](https://github.com/ChohKaifeng/MeetingTimeSchedulerV2/assets/64060097/cabe039c-80dc-44ef-9c1c-3cb7a0060460)
 
 #### Test Case 3: Passed ✅
@@ -103,4 +105,5 @@ Desired outcome:
 * Meeting time is 0800 (480) to 1000 (600)
 
 Outcome: 
+
 ![image](https://github.com/ChohKaifeng/MeetingTimeSchedulerV2/assets/64060097/17b9a7b2-e3d6-468a-9c8e-62d8240c8237)
