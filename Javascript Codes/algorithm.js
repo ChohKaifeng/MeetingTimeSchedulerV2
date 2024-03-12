@@ -1,23 +1,37 @@
+// // Test Case 1 
 // var userData = [
-//   //8, 10, 13
 //   ["1100000008", "1000", "1800"], // cannot
 //   ["1100000009", "1500", "1800"], // cannot
-//   ["1100000010", "0900", "1100"], // can
-//   ["1100000011", "0800", "1000"], // can
+//   ["1100000010", "0800", "1100"], // can
+//   ["1100000011", "0800", "1100"], // can
 //   ["1100000012", "0800", "1100"], // can
-//   ["1100000013", "0800", "1000"], // can
+//   ["1100000013", "0800", "1100"], // can
 // ];
+// var timeRange = ["0800", "1100"];
+// var meetingDuration = "2";
 
+// // Test Case 2
+// var userData = [
+//   ["1100000008", "1000", "1800"], // can
+//   ["1100000009", "1500", "1800"], // cannot
+//   ["1100000010", "0800", "1200"], // can
+//   ["1100000011", "0800", "1200"], // can
+//   ["1100000012", "0800", "1200"], // can
+//   ["1100000013", "0800", "1200"], // can
+// ];
+// var timeRange = ["0800", "1200"];
+// var meetingDuration = "2";
+
+// Test Case 3
 var userData = [
-  //8, 10, 13
-  ["1100000008", "1000", "1800"], // cannot
-  ["1100000009", "1500", "1800"], // cannot
-  ["1100000010", "0900", "1100"], // can
-  ["1100000011", "0900", "1100"], // can
-  ["1100000012", "0900", "1100"], // can
+  ["1100000008", "1000", "1200"], // cannot
+  ["1100000009", "1000", "1200"], // cannot
+  ["1100000010", "1000", "1200"], // cannot
+  ["1100000011", "0800", "1000"], // can
+  ["1100000012", "0800", "1000"], // can
   ["1100000013", "0800", "1000"], // can
 ];
-var timeRange = ["0800", "1100"];
+var timeRange = ["0800", "1200"];
 var meetingDuration = "2";
 
 algorithm();
@@ -45,10 +59,6 @@ function timeConverter(userData, timeRange, meetingDuration) {
 
   return convertedMeetingDuration;
 }
-
-//       userData[i][1] >= timeRange[0] &&
-//   userData[i][2] >= timeRange[1] &&
-//   userData[i][1] >= timeRange[1]
 
 function filterAvailableStaff(convertedMeetingDuration) {
   let availableStaff = [];
@@ -213,8 +223,4 @@ function algorithm() {
   );
 
   console.log(earliestMeetingBestStrength);
-
-  // Best timing is 480, 600, staff 11 &  13
 }
-
-//FIND BEST TIMING OF ALL STAFF (EARLIER BETTER WITH MOST STAFF)
